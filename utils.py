@@ -41,7 +41,7 @@ def prepare_dataset(data_dir):
         line = normalize_text(line)
         sample = f"{line}\t1"
         dataset.append(sample)
-    neg_path = os.path.join(datadir, "neg.txt")
+    neg_path = os.path.join(data_dir, "neg.txt")
     neg_lines = read_txt_file(neg_path)
     print("Processing neg.txt...")
     for line in neg_lines:
